@@ -1,0 +1,36 @@
+
+<h1 class="title">{{title}}</h1>
+
+    <div class="container-fluid prod">
+        <div  *ngIf="q" >
+            <app-home-product-detail [msg]="r"></app-home-product-detail>
+            </div>
+        </div>
+        <div class="container" [style]="margin">
+            <div class="row">
+                <div class="col-lg-5 col-xl-4 col-md-12" *ngFor="let prod of produit"  >
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top " [src]="prod.image" alt="image"  (click)="onClick(prod);changeMargin()">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{prod.nom}}</h5>
+                                <!-- Product price-->
+                                Price: {{prod.prix}}
+                            </div>
+                        <div> 
+                        <button type="submit" *ngIf="prod.description " (click)="onDetail(prod)" class="button-2">Details</button> </div> 
+                        </div>
+                    </div> 
+                    
+               
+                    
+
+
+        </div>
+</div>
+    </div>
+
+
