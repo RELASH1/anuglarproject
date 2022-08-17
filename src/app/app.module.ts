@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppComponent } from './app.component';
 import { ClientModule } from './client/client.module';
 import { AdminModule } from './admin/admin.module';
@@ -9,10 +9,11 @@ import { PageNotFoundComponentComponent } from './page-not-found-component.compo
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     PageNotFoundComponentComponent
-    
+
   ],
   imports: [
     BrowserModule,
@@ -21,12 +22,12 @@ import { AppRoutingModule } from './app-routing.module';
     HomeModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
   exports: [
-    
+
     PageNotFoundComponentComponent
-    
+
   ]
 })
 export class AppModule { }
