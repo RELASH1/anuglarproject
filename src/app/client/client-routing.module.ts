@@ -8,9 +8,10 @@ import { HomeComponent } from './home/home.component';
 
 
 
-const routes: Routes = [{path : 'client', component : ClientComponent,children:[
-{path : 'about', component : AboutComponent},
-{ path: 'home', component: HomeComponent}],
+const routes: Routes = [{
+  path: 'client', component: ClientComponent, children: [
+    { path: 'about', component: AboutComponent },
+    { path: 'home', component: HomeComponent }],
 },
 
 ];
@@ -20,4 +21,3 @@ const routes: Routes = [{path : 'client', component : ClientComponent,children:[
   exports: [RouterModule]
 })
 export class ClientRoutingModule { }
-  

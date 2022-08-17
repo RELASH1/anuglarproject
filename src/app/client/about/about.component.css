@@ -1,56 +1,47 @@
-
-
-
-/*--footer--*/
- 
-
-
-
-
-.nav-item a{
+.nav-item a {
   color: aquamarine;
 }
-a.navbar-brand{
+
+a.navbar-brand {
   color: aquamarine;
 }
 
 
-h1{
+h1 {
   color: #de463b;
 }
 
-
-
-
-
-
-.container-fluid{
+.container-fluid {
   background-color: #333333;
 }
 
 
 .image {
-    width: 35px;
-    height:35px;
+  width: 35px;
+  height: 35px;
 }
+
 footer {
-    background-color: #313036;
+  background-color: #313036;
 }
 
 .w {
-    color: rgba(255, 255, 255, 0.713);
+  color: rgba(255, 255, 255, 0.713);
 }
+
 .wa {
-    color: white;
+  color: white;
 }
+
 .wa1 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
-.display-3{
-    text-align: left;
-    padding: 20px;
-    font-family: 'Tajawal', sans-serif;
-    color: #de463b;
+
+.display-3 {
+  text-align: left;
+  padding: 20px;
+  font-family: 'Tajawal', sans-serif;
+  color: #de463b;
 }
 
 
@@ -72,7 +63,7 @@ html,
 body {
   background-color: #333333;
   color: antiquewhite;
- 
+
 }
 
 .wrapper {
